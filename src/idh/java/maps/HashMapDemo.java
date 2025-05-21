@@ -8,7 +8,7 @@ public class HashMapDemo {
 	public static void main(String[] args){
 		
 		// Eine Map erstellen: Name → Telefonnummer
-        Map<String, String> telefonbuch = new HashMap<>();
+        Map<String, String> telefonbuch = new HashMap<String, String>();
 
         // Einträge hinzufügen
         telefonbuch.put("Anna", "0123-456789");
@@ -17,11 +17,15 @@ public class HashMapDemo {
 
         // Telefonnummer von Anna abrufen
 
+        System.out.println(telefonbuch.get("Anna"));
         
         // Prüfen, ob Bernd vorhanden ist
         
+        System.out.println(telefonbuch.containsKey("Bernd"));
 
         // Clara entfernen
+        
+        telefonbuch.remove("Clara");
         
         
         // Noch eine Anna hinzufügen, mit anderer Nummer
